@@ -1,0 +1,216 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #fff5f7;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #ffc1cc, #ff9aa2);
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+header nav a:hover {
+    color: #ffe6eb;
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(135deg, #ffd6e0, #ffb3c6);
+    padding: 100px 0;
+    text-align: center;
+    border-radius: 0 0 50px 50px;
+}
+
+#hero h2 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    color: #ff4b6a;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.btn {
+    background: linear-gradient(135deg, #ff9aa2, #ffc1cc);
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #ff4b6a, #ff7b91);
+    box-shadow: 0 5px 15px rgba(255,75,106,0.4);
+}
+
+/* Section */
+section {
+    padding: 60px 0;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Booking Form */
+form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin: 0 auto;
+    transition: transform 0.3s;
+}
+
+form:hover {
+    transform: translateY(-5px);
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 500;
+    color: #555;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    transition: border 0.3s;
+}
+
+form input:focus {
+    border: 2px solid #ff4b6a;
+    outline: none;
+}
+
+form button {
+    margin-top: 25px;
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #ff9aa2, #ffc1cc);
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: linear-gradient(135deg, #ff4b6a, #ff7b91);
+    box-shadow: 0 5px 15px rgba(255,75,106,0.3);
+}
+
+.success {
+    color: green;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Booking Table */
+#bookingTable {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+#bookingTable th, #bookingTable td {
+    padding: 15px 10px;
+    text-align: center;
+}
+
+#bookingTable thead {
+    background: linear-gradient(135deg, #ff9aa2, #ffc1cc);
+    color: #fff;
+}
+
+#bookingTable tbody tr:nth-child(even) {
+    background-color: #fff0f3;
+}
+
+/* About & Contact */
+#about, #contact {
+    text-align: center;
+}
+
+#about p, #contact p {
+    max-width: 600px;
+    margin: 20px auto 0;
+    color: #555;
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #ff9aa2, #ffc1cc);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav a {
+        margin: 10px 0 0 0;
+    }
+
+    #hero h2 {
+        font-size: 2rem;
+    }
+}
